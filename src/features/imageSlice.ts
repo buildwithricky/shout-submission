@@ -4,6 +4,7 @@ import type { RootState } from '../store/reduxStore';
 
 // This slice manages the state of liked photos
 // Creates my Image reducer with an entity adapter for efficient state management
+// Clear Likes Feature : Not implemented, but can be added later
 
 const likedAdapter = createEntityAdapter<Photo>({
   sortComparer: (a, b) => a.id.localeCompare(b.id),
